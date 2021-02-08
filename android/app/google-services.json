@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1032430451037",
+    "project_id": "haschat-a4b77",
+    "storage_bucket": "haschat-a4b77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032430451037:android:17dada94a3f209b849d0b4",
+        "android_client_info": {
+          "package_name": "com.example.hasfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032430451037-4o1pkpo7fg8fsm3m11vpc22noa3k22gr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hasfirebase",
+            "certificate_hash": "9cb38726bbb91ad8614eab161742ae5e4bdf8f7b"
+          }
+        },
+        {
+          "client_id": "1032430451037-etrh4nv4shq2ukp80q029569lu1r6bvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa7PpIPcGDoGCw5AyzrafnPYlUqpiTBUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032430451037-etrh4nv4shq2ukp80q029569lu1r6bvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
