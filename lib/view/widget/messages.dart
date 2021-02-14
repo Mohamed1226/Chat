@@ -7,13 +7,14 @@ class Messages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder(
+    return StreamBuilder<QuerySnapshot>(
       stream: FirebaseFirestore.instance.collection("chat").orderBy(
           "currentDate", descending: true).snapshots(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Center(child: CircularProgressIndicator());
         }
+
         var docs = snapshot.data.docs;
         final user = FirebaseAuth.instance.currentUser;
 

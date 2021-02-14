@@ -1,7 +1,7 @@
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:hasfirebase/view_model/sending_message_view_model.dart';
+import 'package:provider/provider.dart';
 class SendingButton extends StatefulWidget {
   @override
   _SendingButtonState createState() => _SendingButtonState();
@@ -42,15 +42,8 @@ class _SendingButtonState extends State<SendingButton> {
   }
   submit()async{
     FocusScope.of(context).unfocus();
-    final user= FirebaseAuth.instance.currentUser;
-    final userData=await FirebaseFirestore.instance.collection("users").doc(user.uid).get();
-    FirebaseFirestore.instance.collection("chat").add({
-      "text": _message,
-      "currentDate": Timestamp.now(),
-      "userId": user.uid,
-      "userName":userData["username"],
-      "userImage":userData["imageUrl"],
-    });
-    _buttonController.clear();
+
+     await Provider.of<SendingMessageViewModel>(context,listen: false).submit(_message);
+     _buttonController.clear();
   }
 }

@@ -30,14 +30,14 @@ dependencies:
   cupertino_icons: ^1.0.2
   toast:
   image_picker: ^0.6.7+22
-  firebase_auth: ^0.20.0+1
+  firebase_auth:
   provider:
   http:
   firebase_messaging:
-  cloud_firestore: ^0.16.0
+  cloud_firestore:
   firebase_core:
-  firebase_storage: ^7.0.0
-  simple_permissions:
+  firebase_storage: ^4.0.1
+#  simple_permissions:
 dev_dependencies:
   flutter_test:
     sdk: flutter
